@@ -4,10 +4,10 @@ RUN yum -y update && \
 yum -y install httpd \
   zip \
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page239/fluid-gallery.zip /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page275/hangover.zip /var/www/html
 WORKDIR /var/www/html
-RUN unzip fluid-gallery.zip
-RUN cp -rvf fluid-gallery/* .
-RUN rm -rf fluid-gallery fluid-gallery.zip
+RUN unzip hangover.zip
+RUN cp -rvf hangover-master/* .
+RUN rm -rf hangover-master hangover.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
