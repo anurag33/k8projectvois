@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER devopsw2022@gmail.com
+MAINTAINER anuragkmr328@gmail.com
 RUN yum -y update && \
 yum -y install httpd \
   zip \
